@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.home {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-btn {
+    border: none;
+    background: rgba(53, 189, 58, 1);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 9px;
+    box-shadow: 6px 6px 0 6px rgba(0, 128, 0, 0.89);
+    padding: 24px;
+    cursor: pointer;
+}
+
+@media (max-width:1000px) {
+    .home svg {
+        width: 680px;
+        height: calc((358/862) * 680px);
+    }
+
+    .start-btn {
+        font-size: 24px;
+    }
+}
+
+@media (max-width:720px) {
+    .home svg {
+        width: 600px;
+        height: calc((358/862) * 600px);
+    }
+
+    .start-btn {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:620px) {
+    .home svg {
+        width: 500px;
+        height: calc((358/862) * 500px);
+    }
+
+    .start-btn {
+        font-size: 20px;
+        box-shadow: 4px 4px 0 4px rgba(0, 128, 0, 0.89);
+    }
+}
+
+@media (max-width:500px) {
+    .home svg {
+        width: 380px;
+        height: calc((358/862) * 380px);
+    }
+
+    .start-btn {
+        font-size: 18px;
+        padding: 16px;
+        box-shadow: 3px 3px 0 3px rgba(0, 128, 0, 0.89);
+    }
+}
+
+@media (max-width:380px) {
+    .home svg {
+        width: 300px;
+        height: calc((358/862) * 300px);
+    }
+
+    .start-btn {
+        font-size: 18px;
+        padding: 16px;
+        box-shadow: 3px 3px 0 3px rgba(0, 128, 0, 0.89);
+    }
+}

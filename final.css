@@ -1,0 +1,158 @@
+main {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    margin-inline: auto;
+    align-items: center;
+
+}
+
+.qz-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-text {
+    font-size: 24px;
+}
+
+.result-bar {
+    height: 52px;
+    width: 50%;
+    display: flex;
+    border-radius: 8px;
+
+}
+
+.mini-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-div {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.correct-label {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(33, 172, 33);
+}
+
+.final-score {
+    font-size: 20px;
+}
+
+.incorrect-label {
+    width: 10px;
+    height: 10px;
+    background-color: crimson;
+}
+
+.not-attempted-label {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(115, 112, 112);
+}
+
+.labels {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.labels>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-answer {
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    background-color: rgb(33, 172, 33);
+}
+
+.wrong-answer {
+
+    height: 100%;
+    background-color: crimson;
+}
+
+.not-attempted {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    height: 100%;
+    background-color: rgb(115, 115, 112);
+}
+
+
+
+.feedback-retry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+.feedback {
+    font-size: 22px;
+}
+
+.retry-btn {
+    font-size: 20px;
+    background-color: rgb(33, 172, 33);
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding-left: 10px;
+    padding-right: 18px;
+    padding-block: 6px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0 2px green;
+    cursor: pointer;
+
+}
+
+@media (max-width:524px) {
+    main {
+        width: 80vw;
+        justify-content: center;
+        align-items: center;
+
+        gap: 6px;
+
+    }
+
+    .feedback {
+        font-size: 16px;
+    }
+
+    .correct-label,
+    .incorrect-label {
+        font-size: 12px;
+
+    }
+
+    .final-score {
+        font-size: 18px;
+
+    }
+
+}
